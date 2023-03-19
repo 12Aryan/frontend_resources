@@ -23,7 +23,7 @@
 .main-div {
     display: flex;
     flex-direction: column;
-    background-image: url(frontendBG.jpg);
+    background-image: url(../images/frontendBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
