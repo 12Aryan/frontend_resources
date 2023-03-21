@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------Tags styling -----------*/
+
+
+
+
+
+
+
+
+/* ----------header,Main, footer section----------- */
+
+
+/* ----------------Main Div ---------------------*/
+.main-div {
+    display: flex;
+    flex-direction: column;
+    background-image: url("/images/frontendBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    
+
+}
+
+/* ----------------Heading ---------------------*/
+.heading {
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.heading h1,h2 {
+    color: #F33052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1.4rem, 4vw, 4rem);
+    font-family: 'Orbitron', sans-serif;
+
+}
+.heading h4{
+    color: #F33052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1.4rem, 4vw, 4rem);
+    font-family: 'Orbitron', sans-serif;
+    padding-top: 10%;
+}
+
+/* ----------------FrontEnd paragraph---------------------*/
+.frontend-para p {
+    color: #e1e4e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-right: clamp(15%, 17%, 20%);
+    padding-left: clamp(15%, 17%, 20%);
+    font-size: clamp(0.1rem, 2vw, 1.3rem);
+    font-family: 'Albert Sans', sans-serif;
+}
+.aboutUs-para p{
+    color: #e1e4e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-right: clamp(15%, 17%, 20%);
+    padding-left: clamp(15%, 17%, 20%);
+    padding-bottom: 20%;
+    font-size: clamp(0.1rem, 2vw, 1.3rem);
+    font-family: 'Albert Sans', sans-serif; 
+}
+/* ----------------Tech Resources---------------------*/
+
+.techResources-div {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 10% 5% 10%;
+    flex-flow: row wrap;
+}
+/*------Zoom in animation Animation for tech icons---------  */
+.zoom {
+
+    transition: transform .6s; 
+    height: 4rem;
+    
+
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.tech-flex-items {
+    flex-wrap: wrap;
+}
+
+
+/* -----------------------------------Footer -------------------------------*/
+
+.footer-div{
+    display: flex;
+    padding: 2%; 
+    border: 2px solid #a12439;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.footer-div p,a{
+    color: #e1e4e1;
+    font-size: clamp(0.1rem, 2vw, 1rem)
+    
+}
+
+/*--------------------------------- Responsive Design------------------ */
+
+@media (min-width:750px) {
+    .heading {
+        margin-bottom: 4rem;
+    }
+
+    .zoom {
+        height: 7rem;
+    }
+
+    .techResources-div {
+        padding: 5% 17% 5% 17%;
+    }
+    .footer-div{
+        padding: 3%; 
+    }
+    
+    
+}
+
+
+
+
+
+
+/* ---------------Animation------------------------------ */
+/* 
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+span {  
+  position: absolute;
+  left: 18%;
+  border-radius: 50%;
+  line-height: 180px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
+}
+span:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+} */

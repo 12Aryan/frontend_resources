@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------tag styling------------------- */
+img{
+  height: 100px;
+}
+body{
+  background-image: url("/images/frontendBG.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 100vh;
+ 
+}
+
+/* -----------------------------Main styling -------------*/
+
+/* -------------------Main-div--------------------- */
+.pages-main-div{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+
+
+
+/* ----------------------Header and document button----------- */
+
+.heading {
+  color: #F33052;
+}
+.doc-btn {
+  background-color: #c6344c;
+  border-radius: 50px;
+  color:#e1e4e1;
+  
+}
+
+/* -------------------Card styling-------------- */
+.cards-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem;
+  padding: 4rem;
+  color:#e1e4e1;
+
+}
+
+
+.card{
+  background-color: #000306;
+  
+  margin: 4rem;
+  text-align: center;
+  
+}
+.video-links{
+  text-decoration: none;
+  color:#e1e4e1;
+  padding: 10px;
+}
+
+/* -----------------For Responsiveness------------- */
+@media (max-width:1020px ) {
+ .cards-display{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+}
